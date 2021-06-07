@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <title>SuperHero</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="src/img/sh2.jpg"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt="SuperHero Logo"
+          />
+          Superhero</a
+        >
+      </nav>
+    </header>
+    <main>
+      <div class="container mt-5">
+        <div class="hero-img text-center">
+          <img src="src/img/sh1.jpg" alt="Super Hero splash picture" />
+        </div>
+        <div class="hero-form text-left m-3">
+          <h3>Encuentra tu SuperHero</h3>
+          <form id="hero-form" method="POST">
+            <div class="form-group">
+              <label for="inputHeroId"
+                >Ingresa el número del SuperHero a buscar</label
+              >
+              <input
+                type="number"
+                required
+                class="form-control"
+                id="inputHeroId"
+                name="inputHeroId"
+                value="213"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Buscar</button>
+          </form>
+        </div>
+        <div class="row hero-info text-center" style="display: none;">
+            <div class="hero-data d-flex col-sm-12 col-lg-6 mb-5 mt-2">
+                <div class="hero-profilepic col-5">
+                    <img height="100%" width="100%" src="https://www.superherodb.com/pictures2/portraits/10/100/835.jpg" id="hero-img" alt="Superhero picture">
+                </div>
+                <div class="card col-7">
+                    <div class="card-body text-left">
+                      <h5 class="card-title" id="hero-title">Card title</h5>
+                      <p class="card-text" id="hero-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush text-left ml-4">
+                      <li class="list-group-item" id="posted-by">An item</li>
+                      <li class="list-group-item" id="occupation">A second item</li>
+                      <li class="list-group-item" id="first-appearance">A third item</li>
+                      <li class="list-group-item" id="height">An item</li>
+                      <li class="list-group-item" id="weight">A second item</li>
+                      <li class="list-group-item" id="aliases">A third item</li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="hero-chart col-sm-12 col-lg-6">
+                <div id="chartContainer" style="height: 300px; width: 100%"></div>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="src/main.js"></script>
+  </body>
+</html>
